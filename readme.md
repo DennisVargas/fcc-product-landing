@@ -1,5 +1,5 @@
 # FCC Product Landing
 
-## A web page for a fictious product
+## A web page for a fictitoius public house called, "The Garlic Bull"
 
-### Created as part of the completion in the Free Code Camp "Front End Development" curriculum
+### Created as part of the Free Code Camp "Front End Development" curriculum
