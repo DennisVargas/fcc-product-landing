@@ -11,11 +11,11 @@
     </head>
 
     <body>
-        <div id="header">
-            <div id="header-img-container" class="col-2">
+        <div id="header" class= "col-12">
+            <div id="header-img-container" class="col-3">
                 <img id="header-img" src="https://lh3.googleusercontent.com/wJHM8ckJApbKMYIMLE_6UGZJnCIpFs0xsJxDKbY20-NNBaZ13yQ6r9ckGaa0KH2MqAevuTeaRow0S-WWMyu3IiWoZNV1Wl-drCdY5bKaPtm-XHa1SJ1mFpee7dkD27xLg9Cg0er0Hq8ONY8JexS4JENkoKxEPZDgpLgUNIRR6ONOcXqBtmdiQDO0Jt_VAwEtyPnwjlx_b4PIC1A4kTAh_ifmpyGs-f-Ow0gyY-d7ZEt3iLj_70Ywywl19zAjvnDmUFYD-zt4htqTPmN3h5AEVtUJRvoNMDNiMxZIqmbKk_TGs0f-jxpcGFZu_74L7F4-jJx-Z2unlasQN6PtS2yE0NZzTrZ6pE2kpzTp6LyuDWxIZ3254kI8J1M9NVF_7wGuoZWmBK7axPH9PC2GhN61ARWfE4GJqf_LD7I7JR9UFkdAW3InAJV4VeRUN9YP1ReKEff5GEck_PX5jRkCFuf2Fc-R4XOgr9kN6gor3lziZp5iBmO_fdMfnA4KLZI0Bwn_qDvFHlxjxNxv_hwz49yw5hPTrx3RM2mCrOoP0Y7lvuUV7KGJxeCwnUFdYSCmzREYhUmtr4SBU2OPafj0E2na9P7b9dZMbru8QAwAhsLCeETu3lvcXOiirSUFg4zkc_e_q1Qk-2IN6W5oZ6IrWfdEUD3MTUD6Xi-c7Tw-_SNx3hLiU6_0lAO43w=w720-h706-no" alt="company-logo">
             </div>
-            <div id="header-title-container" class="col-9">
+            <div id="header-title-container" class="col-7">
                 <h2 id="header-title">The Garlic Bull</h2>
             </div>
             
@@ -31,7 +31,7 @@
                     <li><a href="#menu-target" class="nav-link">Menu</a></li>
                     <li><a href="#reservation-target" class="nav-link">Reservations</a></li>
                 </ul> -->
-                <div class="menu-content">
+                <div class="dropdown-content">
                     <a href="#info-target" class="nav-link">Info</a>
                     <a href="#menu-target" class="nav-link">Menu</a>
                     <a href="#reservation-target" class="nav-link">Reservations</a>
@@ -39,20 +39,22 @@
             </nav>
         </div>
         <div id = "main">
+            <hr>
             <div id="food-reel">
                 <!-- <h1>Video</h1> -->
                 <!-- <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FOLHgoRcMHU?playlist=FOLHgoRcMHU&controls=0&autoplay=1&loop=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <em><p id="about">A bistro specializing in garlic centric cuisine.</p></em>
                 <iframe id="video" src="https://www.youtube.com/embed/FOLHgoRcMHU?playlist=FOLHgoRcMHU&controls=0&autoplay=1&loop=1&rel=0&mute=1" frameborder="0" allow="related; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <hr>
             <div id="info">
                 <div class="anchor">
                     <a name="info-target"></a>
-                    <h1 class="info-label">Information</h1>
+                    <strong><u><h1 class="info-label">Information</h1></u></strong>
+                    
                 </div>
                 <div id="info-section">
-                    <h3>About The Garlic Bull</h3>
-                    <p>The Garlic Bull is a bistro specializing in garlic centric cuisine.</p>
+
                     <h3>Hours Of Operation</h3>
                     <p>9AM - 5PM Everyday</p>
                     <h3>Address</h3>
@@ -60,43 +62,65 @@
                     <h3>Phone Number</h3>
                     <p>123-123-1234</p>
                 </div>
-                
-
             </div>
             <hr>
             <div id="menu">
                 <div class="anchor">
                     <a name="menu-target"></a>
-                    <h1 class="menu-label">Menu</h1>
+                    <strong><u><h1 class="menu-label">Menu</h1></u></strong>
+                    
                 </div>
-                <div id="menu-content">
+                <div id="menu-content" class="col-10">
                     <p>All dishes contain garlic.</p>
+
                     <h3>Appetizers</h3>
-                    <div class="menu-items">
-                        <p>Mac and Cheese</p>
-                        <p>5</p>
-                        <p>Potato Soup</p>
-                        <p>5</p>
-                        <p>Vinagrette Salad</p>
-                        <p>3</p>
+                    <div class="menu-items" >
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Mac and Cheese</p>
+                            <p class="menu-item-price col-6">5</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Potato Soup</p>
+                            <p class="menu-item-price col-6">5</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Vinagrette Salad</p>
+                            <p class="menu-item-price col-6">3</p>
+                        </div>
+
                     </div>
                     <h3>Entrees</h3>
                     <div class="menu-items">
-                        <p>Parmesian Shrimp Linguine</p>
-                        <p>12</p>
-                        <p>Chicken</p>
-                        <p>10</p>
-                        <p>Grilled Steak</p>
-                        <p>18</p>
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Parmesian Shrimp Linguine</p>
+                            <p class="menu-item-price col-6">12</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Grilled Chicken</p>
+                            <p class="menu-item-price col-6">10</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Grilled Steak</p>
+                            <p class="menu-item-price col-6">18</p>
+                        </div>
                     </div>
                     <h3>Desserts</h3>
                     <div class="menu-items">
-                        <p>Chocolate Cake</p>
-                        <p>6</p>
-                        <p>Truffles</p>
-                        <p>5</p>
-                        <p>Ice Cream</p>
-                        <p>3</p>
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Chocolate Cake</p>
+                            <p class="menu-item-price col-6">6</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Truffles</p>
+                            <p class="menu-item-price col-6">5</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="menu-item-name col-6">Ice Cream</p>
+                            <p class="menu-item-price col-6">3</p>
+                        </div>
                     </div>
                 </div>
 
@@ -107,13 +131,10 @@
                     <a name="reservation-target"></a>
                     <h1 class="reservation-label">Reservations</h1>
                 </div>
-                
                 <form id="reservation-form">
-                    <div id="reservation-grid">
-                        <label for="num-people">Number Of Guests: </label>
-                        <label for="reservation-date">Reservation Date: </label>
-                        <label for="reservation-time">Reservation Time: </label>
-                        <select name="num-people" form="reservation-form">
+                    <div class="reservation-item">
+                        <label for="num-people" class="col-6">Number Of Guests: </label>
+                        <select name="num-people" form="reservation-form" class="col-6" required>
                             <option value="2">2 people</option>
                             <option value="3">3 people</option>
                             <option value="4">4 people</option>
@@ -134,13 +155,27 @@
                             <option value="19">19 people</option>
                             <option value="20">20 people</option>
                         </select>
-                        <input type="date" name="reservation-date" id="reservation-date">
-                        <input type="time" name="reservation-time" id="reservation-time">
-                        <label id="email-label" for="email">Contact Email: </label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="reservation-item">
+                        <label for="reservation-date" class="col-6">Reservation Date: </label>
+                        <input type="date" name="reservation-date" id="reservation-date" class="col-6" required>
+                    </div>
+                    <div class="reservation-item">
+                        <label for="reservation-time" class="col-6">Reservation Time: </label>
+                        <input type="time" name="reservation-time" id="reservation-time" class="col-6" required>
+                    </div>
+                    <div class="reservation-item">
+                        <label id="email-label" for="email" class="col-6">Contact Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" class="col-6" required>
+                    </div>
+                    <div class="reservation-item" id="submit-container">
                         <input id="submit" type="submit" value="Submit">
                     </div>
                 </form>
+            </div>
+
+            <div id="footer">
+                <hr>
             </div>
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         </div>
