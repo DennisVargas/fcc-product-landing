@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: grey;
+}
+
 .col-1 {width: 8.33%; }
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%; }
@@ -17,15 +21,165 @@
 .anchor a{
     position: absolute;
     left: 0px;
-    top: -100px;
+    top: -13vh;
 }
 
 .anchor{
     position: relative;
+    height: 20%;
 }
+
+#header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 9vh;
+    /* height: 100%; */
+    min-height: 50px;
+    /* max-height: 200px; */
+    border: thick solid black;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    z-index: 2;
+}
+
+#header-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    height: 100%;
+    /* max-width: 16.66%; */
+}
+#header-img{
+    width: 100%;
+    /* height: auto; */
+    /* max-height: 100%; */
+    min-width: 40.8px;
+    max-width: calc(7.75vh*1.02);
+    /* background-color: coral; */
+}
+
+#header-title-container{
+    height: 100%;
+    display: flex;
+    max-height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    /* background-color: purple; */
+}
+
+#header-title{
+    font-size: 4.5vw;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+#nav-bar{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* background-color: red; */
+}
+
+#main{
+    position: relative;
+    top: 10vh;
+    max-width: 80vw;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    font-size: 1.3vw;
+}
+#main div{
+    padding-top: 8vh;
+    /* margin-top:10vh; */
+}
+#main div #num-people{
+    padding-top: 20px;
+}
+#main div div{
+    padding-top: 0;
+    /* margin-top:0; */
+}
+#about{
+    text-align: center;
+}
+#info{
+    height: auto;
+}
+#info-contents{
+    height: 90%;
+}
+#video{
+    height: 40vh;
+    width: 40vw;
+    max-height: 800px;
+    max-width: 1600px;
+    margin: auto;
+}
+#menu{
+    /* padding-top: 200vh; */
+}
+#menu-content{
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    margin: auto;
+}
+
+.menu-items{
+    margin: auto;
+}
+.menu-item{
+    display:flex;
+}
+.menu-item-name{
+    text-align: center;
+}
+#reservation{
+
+    width: 40%;
+    margin: auto;
+}
+#form{
+    border: solid thick black;
+    display: block;
+    text-align: start;
+    /* font-size: 2vw; */
+
+
+}
+.reservation-item{
+    display: flex;
+    padding: 20px;
+    font-size:110%;
+}
+
+.reservation-item label{
+
+}
+.reservation-item input{
+
+}
+.reservation-item select{
+
+}
+
+#submit-container{
+    justify-content: flex-end;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #header{
+    /* #header{
         position: fixed;
         display: flex;
         height: auto;
@@ -37,30 +191,44 @@
         align-items: center;
         justify-items: center;
         z-index: 2;
-    }
-    #header-img-container{
+    } */
+
+    /* #header-img-container{
         display: flex;
         align-items: center;
         justify-items: center;
-    }
-    #header-img{
+    } */
+
+    /* #header-img{
         width: 100%;
         height: 100%;
         margin: 0;
-    }
+    } */
 
-    #header-title{
-        font-size: 160%;
+    /* #header-title{
         text-align: center;
+        background-color: pink;
+    } */
+
+    #header-title-container{
+        width: 66.66%;
+    }
+    #header-title{
+        font-size: 7vw;
     }
     #nav-bar{
         display: flex;
+        background-color:black;
+        width: 16.66%;
     }
     .menu-bar{
         width: 35px;
         height: 5px;
-        background-color: black;
+        background-color: white;
         margin: 6px 0;
+    }
+    #nav-menu{
+        display: none;
     }
     #dropdown-icon{
         position: relative;
@@ -74,7 +242,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 3;
-        top:60px;
+        top:40px;
         right: 1px;
     }
     .dropdown-content a{
@@ -86,21 +254,21 @@
     .dropdown-content a:hover{background-color: #ddd}
     #nav-bar:hover .dropdown-content{display:block;}
 
-    #main{
+    /* #main{
         position: relative;
         top: 110px;
         z-index: 1;
         text-align: center;
-    }
-    #about{
+    } */
+    /* #about{
         text-align: center;
+    } */
+    #main{
+        max-width: 90vw;
+        font-size: 7vw;
     }
     #video{
         height: auto;
-        width: 95%;
-        max-height: 800px;
-        max-width: 1600px;
-        margin: auto;
     }
     #menu-content{
         border-style: solid;
@@ -118,14 +286,19 @@
     .menu-item-name{
         text-align: end;
     }
-
-    #reservation-form{
+    #reservation{
+        border: solid thick black;
+        width: 100%;
+    }
+    #form{
         display: block;
-
         text-align: start;
+        width: 100%;
     }
     .reservation-item{
         display: flex;
+        padding: 20px;
+        font-size:110%;
     }
     .reservation-item label{
 
@@ -145,7 +318,42 @@
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    #dropdown-icon{
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+    }
 
+    #nav-ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: royalblue; */
+    }
+    #nav-menu{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        background-color: black;
+    }
+    li{
+        float: left;
+        /* padding-left: 20px; */
+        /* background-color: pink; */
+        
+    }
+    
+    .nav-link{
+        font-size: 3.3vw;
+        text-decoration: none;
+        color: white;
+        /* background-color: royalblue; */
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
