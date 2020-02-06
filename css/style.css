@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background-color: grey;
 }
@@ -35,9 +36,7 @@ body{
     align-items: center;
     justify-items: center;
     height: 9vh;
-    /* height: 100%; */
     min-height: 50px;
-    /* max-height: 200px; */
     border: thick solid black;
     top: 0px;
     left: 0px;
@@ -50,17 +49,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
     height: 100%;
-    /* max-width: 16.66%; */
 }
+
 #header-img{
     width: 100%;
-    /* height: auto; */
-    /* max-height: 100%; */
     min-width: 40.8px;
     max-width: calc(7.75vh*1.02);
-    /* background-color: coral; */
 }
 
 #header-title-container{
@@ -70,13 +65,11 @@ body{
     align-items: center;
     justify-content: flex-start;
     padding-left: 5px;
-    /* background-color: purple; */
 }
 
 #header-title{
     font-size: 4.5vw;
     text-align: center;
-    /* background-color: pink; */
 }
 
 #nav-bar{
@@ -85,7 +78,6 @@ body{
     align-items: center;
     justify-content: center;
     background-color: black;
-    /* background-color: red; */
 }
 
 #main{
@@ -96,28 +88,32 @@ body{
     z-index: 1;
     text-align: center;
     background-color: white;
-    font-size: 1.3vw;
+    font-size: 2vw;
 }
 #main div{
     padding-top: 8vh;
-    /* margin-top:10vh; */
 }
+
 #main div #num-people{
     padding-top: 20px;
 }
+
 #main div div{
     padding-top: 0;
-    /* margin-top:0; */
 }
+
 #about{
     text-align: center;
 }
+
 #info{
     height: auto;
 }
+
 #info-contents{
     height: 90%;
 }
+
 #video{
     height: 40vh;
     width: 40vw;
@@ -125,9 +121,7 @@ body{
     max-width: 1600px;
     margin: auto;
 }
-#menu{
-    /* padding-top: 200vh; */
-}
+
 #menu-content{
     border-style: solid;
     border-color: black;
@@ -141,36 +135,33 @@ body{
 .menu-item{
     display:flex;
 }
+
 .menu-item-name{
     text-align: center;
 }
-#reservation{
 
-    width: 40%;
+#reservation{
+    width: 50%;
     margin: auto;
 }
+
 #form{
     border: solid thick black;
     display: block;
     text-align: start;
-    /* font-size: 2vw; */
-
-
 }
+
 .reservation-item{
     display: flex;
-    padding: 20px;
-    font-size:110%;
+    padding: 20px 10px;
 }
 
-.reservation-item label{
-
+select{
+    font-size: inherit;
 }
-.reservation-item input{
 
-}
-.reservation-item select{
-
+input{
+    font-size: inherit;
 }
 
 #submit-container{
@@ -179,43 +170,14 @@ body{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* #header{
-        position: fixed;
-        display: flex;
-        height: auto;
-        border: thick solid black;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        background: white;
-        align-items: center;
-        justify-items: center;
-        z-index: 2;
-    } */
-
-    /* #header-img-container{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-    } */
-
-    /* #header-img{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-    } */
-
-    /* #header-title{
-        text-align: center;
-        background-color: pink;
-    } */
-
     #header-title-container{
         width: 66.66%;
     }
+
     #header-title{
         font-size: 7vw;
     }
+
     #nav-bar{
         display: flex;
         background-color:black;
@@ -227,14 +189,17 @@ body{
         background-color: white;
         margin: 6px 0;
     }
+
     #nav-menu{
         display: none;
     }
+
     #dropdown-icon{
         position: relative;
         display: inline-block;
         margin: auto;
     }
+
     .dropdown-content{
         display: none;
         position: absolute;
@@ -245,75 +210,42 @@ body{
         top:40px;
         right: 1px;
     }
+
     .dropdown-content a{
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
+
     .dropdown-content a:hover{background-color: #ddd}
+
     #nav-bar:hover .dropdown-content{display:block;}
 
-    /* #main{
-        position: relative;
-        top: 110px;
-        z-index: 1;
-        text-align: center;
-    } */
-    /* #about{
-        text-align: center;
-    } */
     #main{
         max-width: 90vw;
-        font-size: 7vw;
+        font-size: 2.6vw;
     }
+
     #video{
         height: auto;
     }
-    #menu-content{
-        border-style: solid;
-        border-color: black;
-        border-width: thick;
-        margin: auto;
-    }
-    
-    .menu-items{
-        margin: auto;
-    }
-    .menu-item{
-        display:flex;
-    }
+
     .menu-item-name{
         text-align: end;
     }
+
     #reservation{
-        border: solid thick black;
-        width: 100%;
+        width: 98%;
     }
-    #form{
-        display: block;
-        text-align: start;
-        width: 100%;
-    }
-    .reservation-item{
-        display: flex;
-        padding: 20px;
-        font-size:110%;
-    }
+
     .reservation-item label{
-
-    }
-    .reservation-item input{
-
-    }
-    .reservation-item select{
-
+        padding-right: 1px;
     }
 
     #submit-container{
         justify-content: flex-end;
     }
-
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -321,6 +253,7 @@ body{
     #dropdown-icon{
         display: none;
     }
+
     .dropdown-content{
         display: none;
     }
@@ -330,179 +263,24 @@ body{
         margin: 0;
         padding: 0;
         overflow: hidden;
-        /* background-color: royalblue; */
     }
+
     #nav-menu{
         display: flex;
         height: 100%;
         width: 100%;
         justify-content: center;
         align-items: center;
-
         background-color: black;
     }
+    
     li{
         float: left;
-        /* padding-left: 20px; */
-        /* background-color: pink; */
-        
     }
     
     .nav-link{
-        font-size: 3.3vw;
+        font-size: 3.1vw;
         text-decoration: none;
         color: white;
-        /* background-color: royalblue; */
     }
   }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-
-  }
-/* a{
-    color: black;
-}
-
-#header{
-    position: fixed;
-    top: 0px;
-    left: 10px;
-    right: 10px;
-    background-color: white;
-    border: solid;
-    border-width: thick;
-    border-color: black;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 50px;
-    z-index: 2;
-}
-
-#header-img{
-    height: 70px;
-    width: 70px;
-    padding: 10px 0 10px 20px;
-}
-
-#header-title{
-    padding-left: 20px;
-}
-
-#nav-bar{
-    position: absolute;
-    right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-#nav-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li{
-    float: left;
-    padding-left: 20px;
-}
-
-.nav-link{
-    text-decoration: none;
-}
-
-#main{
-    position: relative;
-    margin: auto;
-    text-align: center;
-    top: 110px;
-    z-index: 1;
-}
-
-#reservation-form{
-
-}
-
-#reservation-grid{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: auto auto auto auto auto;
-    align-content: center;
-    justify-content: center;
-    width: 700px;
-    margin: auto auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 20px;
-    border-style: solid;
-    border-color: black;
-    padding: 20px 0px;
-    margin-bottom: 10px;
-}
-
-#email-label{
-    grid-column-start: 2;
-
-}
-#email{
-    grid-row-start: 4;
-    grid-column-start: 2;
-}
-
-#submit{
-    grid-row-start: 5;
-    grid-column-start: 2;
-    width: auto;
-}
-
-#video{
-    height: 80vh;
-    width: 80vw;
-    max-height: 800px;
-    max-width: 1600px;
-    margin: auto;
-}
-
-.anchor a{
-    position: absolute;
-    left: 0px;
-    top: -96px;
-}
-
-.anchor{
-    position: relative;
-}
-
-#info-section{
-    border-style: solid;
-    border-color: black;
-    border-width: thick;
-    width: 200px;
-    margin: auto;
-}
-
-#menu-content{
-    border-style: solid;
-    border-color: black;
-    border-width: thick;
-    margin: auto;
-    width: 300px;
-}
-
-.menu-items{
-    display: grid;
-    grid-template-columns: 150px 50px;
-    width: 200px;
-    margin: auto;
-} */
