@@ -1,4 +1,4 @@
-# FCC Product Landing
+# The-Garlic-Bull
 
 ## A web page for a fictitoius public house called, "The Garlic Bull"
 
